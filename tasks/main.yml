@@ -1,6 +1,6 @@
 ---
 - name: create a directory caller dockprom
-  files:
+  file:
     path: "~/dockprom"
     state: directory
 
