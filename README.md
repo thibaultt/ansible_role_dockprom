@@ -9,5 +9,5 @@ This is also an ansible role now for easy installation.
 
 ## What is does :
 
-This does Docker hosts and containers monitoring with [Prometheus](https://prometheus.io/), [Grafana](http://grafana.org/), [cAdvisor](https://github.com/google/cadvisor),
+This does Docker hosts and containers monitoring with [Prometheus](https://prometheus.io/), [Grafana](http://grafana.org/), [cAdvisor-arm](https://github.com/Budry/cadvisor-arm),
 [NodeExporter](https://github.com/prometheus/node_exporter).
