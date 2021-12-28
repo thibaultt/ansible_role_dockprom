@@ -1,0 +1,14 @@
+---
+- name: create a directory caller dockprom
+  path: "~/dockprom"
+  state: directory
+
+- name: Copy docker files
+  copy:
+    src: "../files/"
+    dest: "~/dockprom/"
+    owner: root
+    group: root
+
+- name: Build docker image
+  command : "docker-compose up -d"
