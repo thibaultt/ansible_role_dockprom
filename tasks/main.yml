@@ -1,13 +1,13 @@
 ---
 - name: create a directory caller dockprom
   file:
-    path: "~/dockprom"
+    path: "./dockprom"
     state: directory
 
 - name: Copy docker files
   copy:
     src: "../files/"
-    dest: "~/dockprom/"
+    dest: "./dockprom/"
     owner: root
     group: root
 
