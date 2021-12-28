@@ -1,7 +1,8 @@
 ---
 - name: create a directory caller dockprom
-  path: "~/dockprom"
-  state: directory
+  files:
+    path: "~/dockprom"
+    state: directory
 
 - name: Copy docker files
   copy:
