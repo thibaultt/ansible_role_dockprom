@@ -12,4 +12,6 @@
     group: root
 
 - name: Build docker image
-  command : "cd dockprom && docker-compose up -d"
+  command : "docker-compose up -d"
+  args:
+    chdir: "/home/pi/dockprom"
