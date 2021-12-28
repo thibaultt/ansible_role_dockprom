@@ -54,11 +54,9 @@ services:
       org.label-schema.group: "monitoring"
 
   cadvisor:
-    image: budry/cadvisor-arm:0.30.2
+    image: zcube/cadvisor
     container_name: cadvisor
     privileged: true
-    devices:
-      - /dev/kmsg:/dev/kmsg
     volumes:
       - /:/rootfs:ro
       - /var/run:/var/run:ro
